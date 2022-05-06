@@ -66,9 +66,7 @@ class SeleniumMiddlewareTestCase(BaseScrapySeleniumTestCase):
         scrapy_request = Request(url="http://not-an-url")
 
         self.assertIsNone(
-            self.selenium_middleware.process_request(
-                request=scrapy_request, spider=None
-            )
+            self.selenium_middleware.process_request(request=scrapy_request, spider=None)
         )
 
     def test_process_request_should_return_a_response_if_selenium_request(self):
