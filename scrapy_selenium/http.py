@@ -7,7 +7,7 @@ class SeleniumRequest(Request):
     """Scrapy ``Request`` subclass providing additional arguments"""
 
     def __init__(
-        self, wait_time=None, wait_until=None, screenshot=False, script=None, *args, **kwargs
+        self, *args, wait_time=None, wait_until=None, screenshot=False, script=None, **kwargs
     ):
         """Initialize a new selenium request
 
